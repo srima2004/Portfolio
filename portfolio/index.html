@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Srimathi Dinakaran - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <main class="container">
+        <!-- Header Section -->
+        <nav class="container-fluid">
+           
+            <ul class="side">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#"onclick="showPage('contact')" role="button">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <section id="home">
+            <small class="lg">
+                <a href="https://linkedin.com/in/srimathi-dinakar-6628472b7" target="_blank">LinkedIn</a> 
+                <a href="https://github.com/srima2004" target="_blank">GitHub</a>
+            </small>
+            <figure>
+                <div class="flip-container">
+                    <div class="flipper">
+                      <!-- Front side -->
+                      <div class="front-image">
+                        <img src="images/c2.jpg" alt="profile-pic" class="profile-pic">
+
+                      </div>
+                      
+                      <!-- Back side -->
+                      <div class="back-image">
+                        <img src="images/back.png" alt="back-image" class="profile-pic">
+                      </div>
+                    </div>
+                    
+                    
+                </div>
+               
+                    
+                     <div class="profile-info">
+                        <hgroup class="hgroup1">
+                            <h2>Srimathi Dinakaran</h2>
+                        
+                            <h3>Final-year Engineering Student </h3>
+                           
+                        </hgroup>
+                        <p class="sum">Aspiring software developer with a strong foundation in Java, web development, and database management.
+                            Experienced in creating user-friendly applications and innovative AI-based projects. Skilled in
+                            problem-solving, agile methodologies, and a proactive learner eager to contribute to impactful solutions
+                            in technology.</p>
+                     </div>
+                   
+                    
+            </figure>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+           <figure>
+            <div class="srima">
+                <img src="images/c3.jpg">
+            </div>
+
+            <div class="abt-info">
+                <hgroup>
+                    <h2>About Me</h2>
+                    <h3>Passionate Developer with a Vision</h3>
+                </hgroup>
+                <p>As a Computer and Communication Engineering student, I am focused on creating impactful web applications
+                    that solve real-world problems. My technical expertise and dedication to continuous learning define my
+                    journey in technology.</p>
+                    
+                    <hgroup>
+                        <h2>Education</h2>
+                        <h3>Academic Achievements</h3>
+                    </hgroup>
+                    <ul>
+                        <li>Bachelor of Engineering, Computer and Communication Engineering- Rajalakshmi Institute of Technology (2021-2025)</li>
+                        <li>HSC in Computer Science and Mathematics 
+                            - Velammal Vidhyashram (2020-2021)</li>
+                    </ul>
+                   
+                </div>
+               
+           </figure>
+           
+            
+        </section>
+
+       
+       <!-- Projects Section -->
+<section id="projects">
+    <hgroup>
+        <h2>Projects</h2>
+        <h3>Innovative Solutions Delivered</h3>
+    </hgroup>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <figure>
+                    <img src="images/3dcarousel.jpg" alt="3D Carousel" class="img4">
+                    <figcaption>
+                        <strong style="font-size: 20px; color: rgb(164, 125, 125); margin-left: 30px;" >3D Image Carousel Gallery</strong>
+                        : Designed a responsive 3D gallery using CSS3 animations.
+                        <a  href="https://github.com/srima2004/-3D-Image-Carousel-Gallery" target="_blank" style="text-decoration: none;">View on GitHub</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="carousel-item">
+                <figure>
+                    <figcaption>
+                        <strong>Healthcare Platform</strong>: Scalable platform for patient management with SMS notifications.
+                        <a href="https://github.com/srima2004/Patient-management.git" target="_blank" style="text-decoration: none;">View on GitHub</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="carousel-item">
+                <figure>
+                    <figcaption>
+                        <strong>CodeGPT</strong>: AI-powered application providing coding assistance with GPT-3 integration.
+                        <a href="https://github.com/srima2004/project_openai.git" target="_blank" style="text-decoration: none;">View on GitHub</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="carousel-item">
+                <figure>
+                    <figcaption>
+                        <strong>AI Hologram Project</strong> (In Progress): Designing an interactive 3D hologram prototype.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+       
+<!-- Contact Section -->
+<section id="contact" aria-label="Contact">
+    <hgroup>
+      <h2>Contact Me</h2>
+      <h3>Let's Collaborate</h3>
+    </hgroup>
+    
+    <!-- The Form -->
+    <form id="contact-form" class="grid" action="https://formspree.io/f/mgvvggwr" method="POST">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <!-- Success Message (Initially Hidden) -->
+    <div id="success-message" style="display: none;">
+      <h3>Thank you for reaching out! I'll get back to you soon.</h3>
+    </div>
+  </section>
+  
+  
+    </main>
+<script src="./script.js" defer></script>
+</body>
+
+</html>
